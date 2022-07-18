@@ -197,6 +197,7 @@ body {
     display: grid;
     gap: 32px;
     grid-template-columns: 450px 450px;
+    align-self: start;
 }
 .repo-card {
     display: flex;
@@ -246,6 +247,13 @@ body {
 }
 .repo-fav-count {
     margin-top: 2px;
+}
+
+.repo-list-empty {
+    font-size: 24px;
+    color: var(--dark-main);
+    align-self: start;
+    justify-self: center;
 }
 
 

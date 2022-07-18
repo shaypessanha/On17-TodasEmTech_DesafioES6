@@ -18,7 +18,7 @@
         <div>
             <a class="header-logo" href="#"><span>Github</span>Search</a>
             <div class="input-container">
-                <input class="header-input-search" type="text" placeholder="Digite o usuário...">
+                <input onchange="handleSearch(this.value)" class="header-input-search" type="text" placeholder="Digite o usuário...">
             </div>
         </div>
     </header>
@@ -27,22 +27,24 @@
         
         <!-- User Card content -->
         <main class="main main-user-found hidden">
-            <div class="user-card">
-                <img src="assets/user-placeholder.svg">
-                <h1 class="title-h1">Full Name</h1>
-                <h4>Username</h4>
-                <p>Profile Bio</p>
-                <div class="badge-list">
-                    <div class="badge-container total-followers">
-                        <span class="badge-icon material-symbols-outlined">people</span>
-                        <span class="badge-text">8</span>
-                    </div>
-                    <div class="badge-container total-repos">
-                        <span class="badge-icon material-symbols-outlined">book</span>
-                        <span class="badge-text">22</span>
+            <template class="user-card-template">
+                <div class="user-card">
+                    <img src="assets/user-placeholder.svg">
+                    <h1 class="title-h1">{Full Name}</h1>
+                    <h4>{Username}</h4>
+                    <p>{Profile Bio}</p>
+                    <div class="badge-list">
+                        <div class="badge-container total-followers">
+                            <span class="badge-icon material-symbols-outlined">people</span>
+                            <span class="badge-text">{Followers}</span>
+                        </div>
+                        <div class="badge-container total-repos">
+                            <span class="badge-icon material-symbols-outlined">book</span>
+                            <span class="badge-text">{Total Repos}</span> 
+                        </div>
                     </div>
                 </div>
-            </div>
+            </template>
         </main>
         
         <!-- User not found content -->
@@ -56,38 +58,42 @@
 
         <!-- Repo list content -->
         <main class="main main-user-repos">
-            <div class="user-card">
-                <img src="assets/user-placeholder.svg">
-                <h1 class="title-h1">Full Name</h1>
-                <h4>Username</h4>
-                <p>Profile Bio</p>
-                <div class="badge-list">
-                    <div class="badge-container total-followers">
-                        <span class="badge-icon material-symbols-outlined">people</span>
-                        <span class="badge-text">8</span>
-                    </div>
-                    <div class="badge-container total-repos">
-                        <span class="badge-icon material-symbols-outlined">book</span>
-                        <span class="badge-text">22</span> 
+            <template class="user-card-template">
+                <div class="user-card">
+                    <img src="assets/user-placeholder.svg">
+                    <h1 class="title-h1">{Full Name}</h1>
+                    <h4>{Username}</h4>
+                    <p>{Profile Bio}</p>
+                    <div class="badge-list">
+                        <div class="badge-container total-followers">
+                            <span class="badge-icon material-symbols-outlined">people</span>
+                            <span class="badge-text">{Followers}</span>
+                        </div>
+                        <div class="badge-container total-repos">
+                            <span class="badge-icon material-symbols-outlined">book</span>
+                            <span class="badge-text">{Total Repos}</span> 
+                        </div>
                     </div>
                 </div>
-            </div>
+            </template>
 
             <div class="repo-card-list">
-                <div class="repo-card">
-                    <h3 class="repo-title">Repo Title</h3>
-                    <p class="repo-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, eum?</p>
-                    <div class="repo-card-footer">
-                        <div class="repo-lang-container">
-                            <span class="repo-dot material-symbols-outlined">circle</span>
-                            <span class="repo-lang">JavaScript</span>
-                        </div>
-                        <div class="repo-fav-container">
-                            <span class="repo-fav-star material-symbols-outlined">grade</span>
-                            <span class="repo-fav-count">2</span>
+                <template class="repo-card-template">
+                    <div class="repo-card">
+                        <h3 class="repo-title">{Repo Title}</h3>
+                        <p class="repo-desc">{Description}</p>
+                        <div class="repo-card-footer">
+                            <div class="repo-lang-container">
+                                <span class="repo-dot material-symbols-outlined">circle</span>
+                                <span class="repo-lang">{Language}</span>
+                            </div>
+                            <div class="repo-fav-container">
+                                <span class="repo-fav-star material-symbols-outlined">grade</span>
+                                <span class="repo-fav-count">{Fav Count}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </template>
             </div>
         </main>
     
