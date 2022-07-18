@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./module.js" defer type='module'></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a class="header-logo" href="#"><span>Github</span>Search</a>
+            <div class="input-container">
+                <input class="header-input-search" type="text" placeholder="Digite o usuário...">
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        
+        <!-- User Card content -->
+        <main class="main main-user-found hidden">
+            <div class="user-card">
+                <img src="assets/user-placeholder.svg">
+                <h1 class="title-h1">Full Name</h1>
+                <h4>Username</h4>
+                <p>Profile Bio</p>
+                <div class="badge-list">
+                    <div class="badge-container total-followers">
+                        <span class="badge-icon material-symbols-outlined">people</span>
+                        <span class="badge-text">8</span>
+                    </div>
+                    <div class="badge-container total-repos">
+                        <span class="badge-icon material-symbols-outlined">book</span>
+                        <span class="badge-text">22</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- User not found content -->
+        <main class="main main-user-not-found hidden">
+            <div class="user-not-found">
+                <h1 class="title-h1">Usuário não encontrado :(</h1>
+                <h4>Pesquise novamente</h4>
+                <img src="assets/user-not-found-img.svg">
+            </div>
+        </main>
+
+        <!-- Repo list content -->
+        <main class="main main-user-repos">
+            <div class="user-card">
+                <img src="assets/user-placeholder.svg">
+                <h1 class="title-h1">Full Name</h1>
+                <h4>Username</h4>
+                <p>Profile Bio</p>
+                <div class="badge-list">
+                    <div class="badge-container total-followers">
+                        <span class="badge-icon material-symbols-outlined">people</span>
+                        <span class="badge-text">8</span>
+                    </div>
+                    <div class="badge-container total-repos">
+                        <span class="badge-icon material-symbols-outlined">book</span>
+                        <span class="badge-text">22</span> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="repo-card-list">
+                <div class="repo-card">
+                    <h3 class="repo-title">Repo Title</h3>
+                    <p class="repo-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, eum?</p>
+                    <div class="repo-card-footer">
+                        <div class="repo-lang-container">
+                            <span class="repo-dot material-symbols-outlined">circle</span>
+                            <span class="repo-lang">JavaScript</span>
+                        </div>
+                        <div class="repo-fav-container">
+                            <span class="repo-fav-star material-symbols-outlined">grade</span>
+                            <span class="repo-fav-count">2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div>
+                <p>Desenvolvido por <a href="https://github.com/shaypessanha">Shayanne Pessanha</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,147 @@
+*{
+  font-family: 'Quicksand', sans-serif;;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #f8f8f8;
+  color: #313131;
+}
+
+/*HEADER*/
+.nav-bar{
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title{
+  margin-left: 10px;
+}
+
+.detail-title{
+  color: #EC9B69;
+}
+
+.form{
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 40px;
+  display: flex;
+}
+
+.input{
+  border: none;
+  width: 400px;
+  padding: 5px;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+}
+
+/*MAIN*/
+.container-card{
+  height: 80vh;
+  display: grid;
+  place-content: center;
+}
+
+.card-1{
+  width: 300px;
+  padding: 10px;
+}
+
+.container-img-github{
+  max-width: 180px;
+}
+
+.img-github{
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.name{
+  color: #EC9B69;
+  font-size: 1.5rem;
+  margin-top: 12px;
+}
+
+.login{
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.bio{
+  padding: 15px 0;
+  opacity: 0.5;
+}
+
+.container-icons{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.caixa-icone-numeros{
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+}
+
+.caixa-icone-numeros img{
+  max-width: 100%;
+}
+
+.caixa-icone-numeros span{
+  opacity: 0.8;
+}
+
+/*CARD-2*/
+.inativo{
+  display: none;
+}
+
+.ativo{
+  display: grid;
+  place-items: center;
+}
+
+.title-2{
+  color: #EC9B69;
+  font-size: 3rem;
+}
+
+.p-search{
+  opacity: 0.5;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.img-not-found{
+  max-height: 50vh;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #ffffff;
+  text-align: center;
+}
+
+footer p{
+  padding: 30px 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #EC9B69;
+}

@@ -1,0 +1,231 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+/* ------------- NAVBAR ----------- */
+
+.navbar {
+    display: flex;
+    position: absolute;
+    width: 1600px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.github {
+    color: #EC9B69;
+    position: absolute;
+    width: 207px;
+    height: 40px;
+    left: 13px;
+    top: -22px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.search {
+    color: #000000;
+    position: absolute;
+    width: 207px;
+    height: 40px;
+    left: 110px;
+    top: -22px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 11px;
+    gap: 8px;
+    position: absolute;
+    width: 403px;
+    height: 30px;
+    left: 1054px;
+    top: 6px;
+    background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    border-radius: 8px;
+}
+
+.button_submit {
+
+    width: 60px;
+    margin-top: 8px;
+    height: 25px;
+    margin-left: 1460px;
+
+
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #313131;
+
+    flex: none;
+    z-index: 1;
+    flex-grow: 0;
+}
+
+/* ------------- CONTAINER PRINCIPAL ----------- */
+
+.section-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 156px;
+    gap: 8px;
+    width: 252px;
+    height: 426px;
+    margin-left: 250px;
+    margin-top: -54px;
+
+}
+
+.info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 252px;
+    height: 120px;
+
+}
+
+.name {
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #EC9B69;
+
+}
+
+.login {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #313131;
+
+    opacity: 0.5;
+}
+
+.bio {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #313131;
+
+    opacity: 0.5;
+}
+
+.info_img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 140px;
+    height: 40px;
+    margin-top: 110px;
+}
+
+.info_img p {
+    display: inline-block;
+}
+
+.img-github {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* ------------- CONTAINER ERROR ----------- */
+
+
+.error-card {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 156px;
+    gap: 8px;
+    width: 600px;
+    height: 426px;
+    margin-left: -170px;
+    margin-top: -54px;
+}
+
+.error-user {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #EC9B69;
+}
+
+.error-search {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #313131;
+    opacity: 0.5;
+    margin-top: -41px;
+}
+
+.img-error {
+    margin-top: -132px;
+
+}
+
+/* ------------- FOOTER ----------- */
+
+.rodape {
+    background-color: #ffffff;
+    padding: -12px;
+    margin-top: 55px;
+}
+
+.rodape p {
+    color: rgb(194, 194, 194);
+    text-align: center;
+}

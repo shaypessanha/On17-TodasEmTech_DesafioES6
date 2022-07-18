@@ -1,0 +1,60 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.caixa-input{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+};
+
+.titulo-nav{
+    padding: 20px;
+   
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card-principal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 250px;
+    background-color: lavenderblush;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.section-do-card{
+    display: flex;
+    justify-content: center;
+}
+
+.img-github{
+    border-radius: 10px;
+}
+
+.caixa-icone-numeros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icone1{
+    max-height: 33px;
+}
+
+.icone2{
+    max-height: 20px;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NAV */
+.nav-bar{
+    display: flex;
+    background-color: #242121;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+h1{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+/* FORM */
+.Form-principal{
+    display: flex;
+    width: 500px;
+    height: 100px;
+    align-items: center;
+    right: 100px;
+}
+
+.Form-principal .input{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0 15px;
+    border: 0;
+}
+
+.Form-principal .botao{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border-radius: 50px;
+    border: 0;
+    right: 10;
+
+}
+
+.Form-principal .botao .img{
+    display: flex;
+    width: 50px;
+    height: 50px ;
+    align-items: center;
+    border-radius: 50px;
+}
+
+/* SECTION */
+.Section1{
+    padding: 5vh;
+    display: flex;
+}
+.Section1 .img1{
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    height: 10%;
+}
+
+/* FOOTER */
+
+
+
+
+
+
+
+
