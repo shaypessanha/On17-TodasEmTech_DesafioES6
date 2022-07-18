@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./module.js" defer type='module'></script>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a class="header-logo" href="#"><span>Github</span>Search</a>
+            <div class="input-container">
+                <input onchange="handleSearch(this.value)" class="header-input-search" type="text" placeholder="Digite o usuário...">
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        
+        <!-- User Card content -->
+        <main class="main main-user-found">
+            <div class="user-card">
+                <img src="assets/user-placeholder.svg">
+                <h1 class="title-h1">{Full Name}</h1>
+                <h4>{Username}</h4>
+                <p>{Profile Bio}</p>
+                <div class="badge-list">
+                    <div class="badge-container total-followers">
+                        <span class="badge-icon material-symbols-outlined">people</span>
+                        <span class="badge-text">{Followers}</span>
+                    </div>
+                    <div class="badge-container total-repos">
+                        <span class="badge-icon material-symbols-outlined">book</span>
+                        <span class="badge-text">{Total Repos}</span> 
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- User not found content -->
+        <main class="main main-user-not-found hidden">
+            <div class="user-not-found">
+                <h1 class="title-h1">Usuário não encontrado :(</h1>
+                <h4>Pesquise novamente</h4>
+                <img src="assets/user-not-found-img.svg">
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div>
+                <p>Desenvolvido por <a href="https://github.com/shaypessanha">Shayanne Pessanha</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
